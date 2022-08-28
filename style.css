@@ -2,7 +2,6 @@
 .contents {
     display: flex;
     gap: 100px;
-    padding-top: 30px;
     justify-content: center;
 }
 
@@ -32,4 +31,10 @@
 #gridContainer {
     display: flex;
     justify-content: center;
+}
+
+button {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
