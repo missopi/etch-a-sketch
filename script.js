@@ -18,7 +18,6 @@ function makeColumns(colNumber) {
             let newColumn = document.createElement("div");
             rows[j].appendChild(newColumn).classList = "column";
         };
-
     };
 };
 
@@ -26,6 +25,6 @@ function makeColumns(colNumber) {
 function setGrid() {
     makeRows(16);
     makeColumns(16);
-}
+};
 
 setGrid();

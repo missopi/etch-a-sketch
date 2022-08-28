@@ -1,24 +1,39 @@
 
+.contents {
+    display: flex;
+    gap: 50px;
+    padding-top: 100px;
+    justify-content: center;
+}
+
 
 .title {
     text-align: center;
     font-size: 70px;
     font-weight: bold;
-    margin-top: 40px;
-    padding-bottom: 20px;
+    color: rgb(133, 132, 132);
+    margin-top: 20px;
+    padding-bottom: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#gridContainer {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(166, 0, 0);
+    border-radius: 25px;
+    width: 510px;
 }
 
 .row {
     display: flex;
     height: 30px;
-    justify-content: center;
+    background-color: white;
 }
 
 .column {
-    border: 1px solid rgb(154, 153, 153);
+    border: 1px solid rgb(241, 240, 240);
     width: 30px;
     display: flex;
     margin: 0px;
-    
   }
