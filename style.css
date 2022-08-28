@@ -1,18 +1,24 @@
-body {
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
 
-.contents {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
 
-.header {
+.title {
     text-align: center;
     font-size: 70px;
     font-weight: bold;
-    margin-top: 70px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.row {
+    display: flex;
+    height: 30px;
+    justify-content: center;
+}
+
+.column {
+    border: 1px solid rgb(154, 153, 153);
+    width: 30px;
+    display: flex;
+    margin: 0px;
+    
+  }
