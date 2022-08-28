@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.header {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 70px;
+}
