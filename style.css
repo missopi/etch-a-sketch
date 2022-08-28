@@ -1,8 +1,16 @@
+.body {
+    min-height: 100vh;
+}
 
 .contents {
     display: flex;
-    gap: 100px;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 30px;
+}
+
+button {
+    margin-inline: 570px;
 }
 
 .title {
