@@ -31,11 +31,9 @@ setGrid();
 
 
 
-grid.addEventListener('pointerdown', function(e) {
+grid.addEventListener('pointerover', function(e) {
     if (e.target.className == 'column' || e.target.className == 'row') {
     e.target.classList.replace('column', 'color');
     }
-
-    console.log(e.target.className);
 });
 
