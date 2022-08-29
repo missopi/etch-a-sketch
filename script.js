@@ -28,3 +28,8 @@ function setGrid() {
 };
 
 setGrid();
+
+this.addEventListener('pointerdown', function(e) {
+    e.target.classList.replace('row', 'color');
+});
+

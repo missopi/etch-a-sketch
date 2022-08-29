@@ -9,10 +9,6 @@
     margin-bottom: 30px;
 }
 
-button {
-    margin-inline: 570px;
-}
-
 .title {
     text-align: center;
     font-size: 60px;
@@ -26,7 +22,7 @@ button {
 .row {
     display: flex;
     height: 30px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
 }
 
 .column {
@@ -45,4 +41,11 @@ button {
     padding: 5px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.color {
+    background-color: black;
+    border: 1px solid rgb(63, 63, 63);
 }
