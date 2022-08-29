@@ -29,7 +29,11 @@ function setGrid() {
 
 setGrid();
 
-this.addEventListener('pointerdown', function(e) {
-    e.target.classList.replace('row', 'color');
+
+
+grid.addEventListener('pointerdown', function(e) {
+    
+
+    console.log(e);
 });
 
