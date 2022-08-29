@@ -2,6 +2,7 @@
 let grid = document.getElementById('grid');
 let rows = document.getElementsByClassName('row');
 let columns = document.getElementsByClassName('column');
+const clearBtn = document.getElementById('clear');
 
 // creates rows for grid
 function makeRows(rowNumber) {
@@ -22,18 +23,23 @@ function makeColumns(colNumber) {
 };
 
 // creates a grid to a specific size 
-function setGrid() {
+function createGrid() {
     makeRows(16);
     makeColumns(16);
 };
 
-setGrid();
+createGrid();
 
-
-
-grid.addEventListener('pointerover', function(e) {
-    if (e.target.className == 'column' || e.target.className == 'row') {
-    e.target.classList.replace('column', 'color');
-    }
+grid.addEventListener('pointerdown', function(e) {
+    grid.addEventListener('pointerover', function(e) {
+        if (e.target.className == 'column' || e.target.className == 'row') {
+        e.target.classList.replace('column', 'color');
+        };
+    });
 });
 
+clearBtn.addEventListener("click", function() {
+    makeRows(16);
+    makeColumns(16);
+    createGrid();
+});
