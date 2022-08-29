@@ -38,8 +38,9 @@ grid.addEventListener('pointerdown', function(e) {
     });
 });
 
-clearBtn.addEventListener("click", function() {
-    makeRows(16);
-    makeColumns(16);
-    createGrid();
+clearBtn.addEventListener("click", function(e) {
+    if (e.target.id == 'clear') {
+        grid.innerHTML = ""; // clears out old grid so doesn't stack on top of each other
+        createGrid();
+    };
 });
