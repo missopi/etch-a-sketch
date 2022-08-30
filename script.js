@@ -14,6 +14,7 @@ function makeGrid(size) {
     for (let i = 0; i < 256; i++) {
         let square = document.createElement('div');
         square.style.backgroundColor = 'red';
+        square.addEventListener('mouseover', changeColour);
         etchGrid.insertAdjacentElement('beforeend', square);
     };
 };
@@ -42,21 +43,21 @@ makeGrid(16);
 //});
 
 
-//function changeColour(e) {
+function changeColour() {
    // console.log(e.target.className);
   //  if (e.target.className === 'colour') {
   //      let r = Math.floor(Math.random() * 256);
   //      let g = Math.floor(Math.random() * 256);
   //      let b = Math.floor(Math.random() * 256);
-  //      e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+   // e.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
   //  }
   //  else if (e.target.className === 'erase') {
-  //      e.target.style.backgroundColor = '#ffffff';
+  //this.style.backgroundColor = '#ffffff';
   //  }
    // else if (e.target.className === 'black') {
-   //     e.target.style.backgroundColor = '#000000';
+   this.style.backgroundColor = 'black';
    // }
-//};
+};
 
 //colourBtn.addEventListener("click", function(e) {
    // if (e.target.id == 'rgb') {
