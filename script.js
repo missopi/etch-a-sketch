@@ -6,14 +6,17 @@ const eraseBtn = document.getElementById('erase');
 
 let colour = 'RGB(0,0,0)';
 
-function makeGrid(size) {
+function makeGrid(number) {
     let etchGrid = document.querySelector('.grid');
-    etchGrid.style.gridTemplateColumns = "repeat(16 , 2fr)";
+    let squares = etchGrid.querySelectorAll('div');
+    squares.forEach((div) => div.remove());
+    etchGrid.style.gridTemplateColumns = `repeat(${number} , 2fr)`;
     console.log(etchGrid.style.gridTemplateColumns)
-    etchGrid.style.gridTemplateRows = "repeat(16 , 2fr";
+    etchGrid.style.gridTemplateRows = `repeat(${number} , 2fr)`;
     console.log(etchGrid.style.gridTemplateColumns)
 
-    for (let i = 0; i < 256; i++) {
+    let total = number * number;
+    for (let i = 0; i < total; i++) {
         let square = document.createElement('div');
         square.style.backgroundColor = 'red';
         square.addEventListener('mouseover', changeColour);
@@ -23,13 +26,6 @@ function makeGrid(size) {
 
 makeGrid(16);
 
-//clearBtn.addEventListener("click", function(e) {
-  //  if (e.target.id == 'clear') {
-//        grid.innerHTML = ""; // clears out old grid so doesn't stack on top of each other
-   //     createGrid();
-   //     console.log(e.target.id);
-  //  };
-//});
 
 
 function changeColour() {
@@ -57,11 +53,5 @@ function changeColour() {
 //blackBtn.addEventListener("click", function(e) {
   //  if (e.target.id == 'black') {
  //       console.log(e.target.id);
-  //  }
-//});
-
-//eraseBtn.addEventListener("click", function(e) {
-   // if (e.target.id == 'erase') {
-    //    console.log(e.target.id);
   //  }
 //});
