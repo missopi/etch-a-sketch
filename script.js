@@ -44,14 +44,8 @@ function changeColour() {
    // }
 };
 
-//colourBtn.addEventListener("click", function(e) {
-   // if (e.target.id == 'rgb') {
-//        console.log(e.target.id); 
-//    }
-//});
+function erase() {
+    colour = 'white';
+};
 
-//blackBtn.addEventListener("click", function(e) {
-  //  if (e.target.id == 'black') {
- //       console.log(e.target.id);
-  //  }
-//});
+
