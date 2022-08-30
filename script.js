@@ -54,14 +54,12 @@ clearBtn.addEventListener("click", function(e) {
 });
 
 
-
 function changeColour(e) {
-    console.log(e);
-    if (e === 'rgb') {
+    console.log(e.target.className);
+    if (e.target.className === 'colour') {
         let r = Math.floor(Math.random() * 256);
         let g = Math.floor(Math.random() * 256);
         let b = Math.floor(Math.random() * 256);
-        
         e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
     }
     else if (e === 'erase') {
