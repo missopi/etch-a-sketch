@@ -50,14 +50,10 @@ clearBtn.addEventListener("click", function(e) {
 
 blackBtn.addEventListener("click", function(e) {
     if (e.target.id == 'blackBtn') {
-        blackMode = toggle(blackMode);
-        
     }
 });
 
 colourBtn.addEventListener("click", function(e) {
     if (e.target.id == 'colourBtn') {
-        colourMode = toggle(colourMode);
-        
     }
 });
