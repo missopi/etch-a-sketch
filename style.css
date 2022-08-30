@@ -9,6 +9,11 @@
     font-family: 'Marker Felt', sans-serif;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .grid {
     width: 500px;
     height: 500px;
