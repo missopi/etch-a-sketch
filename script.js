@@ -1,9 +1,4 @@
 
-const clearBtn = document.getElementById('clear');
-const blackBtn = document.getElementById('black');
-const colourBtn = document.getElementById('rgb');
-const eraseBtn = document.getElementById('erase');
-
 let colour = 'RGB(0,0,0)';
 
 function makeGrid(number) {
