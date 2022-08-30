@@ -44,3 +44,9 @@ clearBtn.addEventListener("click", function(e) {
         createGrid();
     };
 });
+
+blackBtn.addEventListener("click", function(e) {
+    if (e.target.id == 'blackBtn') {
+        
+    }
+});
