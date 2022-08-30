@@ -53,11 +53,19 @@ blackBtn.addEventListener("click", function(e) {
     }
 });
 
-function rgb(cell) {
-    let r = Math.floor(Math.random() * 256);
-    let g = Math.floor(Math.random() * 256);
-    let b = Math.floor(Math.random() * 256);
-    cell.style.setProperty('background-color', `rgb(${r},${g},${b})`);
+function changeColour(e) {
+    if (currentMode === 'rgb') {
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
+    }
+    else if (currentMode === 'erase') {
+        e.target.style.backgroundColor = '#ffffff';
+    }
+    else if (currentMode === 'black') {
+        e.target.style.backgroundColor = '#000000';
+    }
 };
 
 colourBtn.addEventListener("click", function(e) {
