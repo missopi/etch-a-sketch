@@ -1,8 +1,10 @@
 
-//const clearBtn = document.getElementById('clear');
-//const blackBtn = document.getElementById('black');
-////const colourBtn = document.getElementById('rgb');
-//const eraseBtn = document.getElementById('erase');
+const clearBtn = document.getElementById('clear');
+const blackBtn = document.getElementById('black');
+const colourBtn = document.getElementById('rgb');
+const eraseBtn = document.getElementById('erase');
+
+let colour = 'RGB(0,0,0)';
 
 function makeGrid(size) {
     let etchGrid = document.querySelector('.grid');
@@ -55,7 +57,7 @@ function changeColour() {
   //this.style.backgroundColor = '#ffffff';
   //  }
    // else if (e.target.className === 'black') {
-   this.style.backgroundColor = 'black';
+   this.style.backgroundColor = colour;
    // }
 };
 
