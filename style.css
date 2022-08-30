@@ -1,6 +1,3 @@
-.body {
-    min-height: 100vh;
-}
 
 .title {
     text-align: center;
@@ -12,32 +9,16 @@
     font-family: 'Marker Felt', sans-serif;
 }
 
-.row {
-    display: flex;
-    height: 30px;
+.grid {
+    width: 500px;
+    height: 500px;
+    display: grid;
 }
-
-.column {
-    border: 1px solid rgb(63, 63, 63);
-    width: 30px;
-    display: flex;
-    margin: 0px;
-    background-color: rgb(255, 254, 254);
-}
-
 
 button {
     padding: 5px;
     padding-left: 30px;
     padding-right: 30px; 
-}
-
-.colour {
-    background-color: rgb(208, 0, 0);
-    border: 1px solid rgb(63, 63, 63);
-    width: 30px;
-    display: flex;
-    margin: 0px;
 }
 
 .reset {
