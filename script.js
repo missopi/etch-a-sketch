@@ -53,6 +53,13 @@ blackBtn.addEventListener("click", function(e) {
     }
 });
 
+function rgb(cell) {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    cell.style.setProperty('background-color', `rgb(${r},${g},${b})`);
+};
+
 colourBtn.addEventListener("click", function(e) {
     if (e.target.id == 'colourBtn') {
     }
