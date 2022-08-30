@@ -49,24 +49,25 @@ clearBtn.addEventListener("click", function(e) {
     if (e.target.id == 'clear') {
         grid.innerHTML = ""; // clears out old grid so doesn't stack on top of each other
         createGrid();
-        console.log(e);
+        console.log(e.target.id);
     };
 });
 
 
 
 function changeColour(e) {
-    if (currentMode === 'rgb') {
+    console.log(e);
+    if (e === 'rgb') {
         let r = Math.floor(Math.random() * 256);
         let g = Math.floor(Math.random() * 256);
         let b = Math.floor(Math.random() * 256);
-        console.log(e.target);
+        
         e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
     }
-    else if (currentMode === 'erase') {
+    else if (e === 'erase') {
         e.target.style.backgroundColor = '#ffffff';
     }
-    else if (currentMode === 'black') {
+    else if (e === 'black') {
         e.target.style.backgroundColor = '#000000';
     }
 };
@@ -74,20 +75,20 @@ function changeColour(e) {
 colourBtn.addEventListener("click", function(e) {
     if (e.target.id == 'rgb') {
         console.log(e.target.id);
-        changeColour(currentMode === 'rgb'); 
+        changeColour('rgb'); 
     }
 });
 
 blackBtn.addEventListener("click", function(e) {
     if (e.target.id == 'black') {
         console.log(e.target.id);
-        changeColour(currentMode === 'black'); 
+        changeColour('black'); 
     }
 });
 
 eraseBtn.addEventListener("click", function(e) {
     if (e.target.id == 'erase') {
         console.log(e.target.id);
-        changeColour(currentMode === 'erase'); 
+        changeColour('erase'); 
     }
 });
