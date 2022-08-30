@@ -62,10 +62,10 @@ function changeColour(e) {
         let b = Math.floor(Math.random() * 256);
         e.target.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
     }
-    else if (e === 'erase') {
+    else if (e.target.className === 'erase') {
         e.target.style.backgroundColor = '#ffffff';
     }
-    else if (e === 'black') {
+    else if (e.target.className === 'black') {
         e.target.style.backgroundColor = '#000000';
     }
 };
