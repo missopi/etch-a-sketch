@@ -48,4 +48,8 @@ function erase() {
     colour = 'white';
 };
 
+function black() {
+    colour = 'black';
+}
+
 
