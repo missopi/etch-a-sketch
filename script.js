@@ -23,19 +23,6 @@ function makeGrid(size) {
 
 makeGrid(16);
 
-
-//let currentMode = '';
-
-
-//grid.addEventListener('pointerdown', function(e) {
-   // grid.addEventListener('pointerover', function(e) {
-  //      if (e.target.className == 'column' || e.target.className == 'row') {
-   //     e.target.classList.replace('column', 'colour');
-  //      };
- //   });
- //   grid.addEventListener('pointerover', changeColour);
-//});
-
 //clearBtn.addEventListener("click", function(e) {
   //  if (e.target.id == 'clear') {
 //        grid.innerHTML = ""; // clears out old grid so doesn't stack on top of each other
