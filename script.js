@@ -72,21 +72,18 @@ function changeColour(e) {
 
 colourBtn.addEventListener("click", function(e) {
     if (e.target.id == 'rgb') {
-        console.log(e.target.id);
-        changeColour('rgb'); 
+        console.log(e.target.id); 
     }
 });
 
 blackBtn.addEventListener("click", function(e) {
     if (e.target.id == 'black') {
         console.log(e.target.id);
-        changeColour('black'); 
     }
 });
 
 eraseBtn.addEventListener("click", function(e) {
     if (e.target.id == 'erase') {
         console.log(e.target.id);
-        changeColour('erase'); 
     }
 });
