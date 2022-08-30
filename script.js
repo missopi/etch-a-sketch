@@ -74,20 +74,20 @@ function changeColour(e) {
 colourBtn.addEventListener("click", function(e) {
     if (e.target.id == 'rgb') {
         console.log(e.target.id);
-        currentMode === 'rgb'; 
+        changeColour(currentMode === 'rgb'); 
     }
 });
 
 blackBtn.addEventListener("click", function(e) {
     if (e.target.id == 'black') {
         console.log(e.target.id);
-        currentMode === 'black'; 
+        changeColour(currentMode === 'black'); 
     }
 });
 
 eraseBtn.addEventListener("click", function(e) {
     if (e.target.id == 'erase') {
         console.log(e.target.id);
-        currentMode === 'erase'; 
+        changeColour(currentMode === 'erase'); 
     }
 });
