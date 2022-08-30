@@ -3,6 +3,8 @@ let grid = document.getElementById('grid');
 let rows = document.getElementsByClassName('row');
 let columns = document.getElementsByClassName('column');
 const clearBtn = document.getElementById('clear');
+const blackBtn = document.getElementById('blackBtn');
+const colourBtn = document.getElementById('coloutBtn');
 
 // creates rows for grid
 function makeRows(rowNumber) {
@@ -30,10 +32,11 @@ function createGrid() {
 
 createGrid();
 
+
 grid.addEventListener('pointerdown', function(e) {
     grid.addEventListener('pointerover', function(e) {
         if (e.target.className == 'column' || e.target.className == 'row') {
-        e.target.classList.replace('column', 'color');
+        e.target.classList.replace('column', 'colour');
         };
     });
 });
@@ -47,6 +50,14 @@ clearBtn.addEventListener("click", function(e) {
 
 blackBtn.addEventListener("click", function(e) {
     if (e.target.id == 'blackBtn') {
+        blackMode = toggle(blackMode);
+        
+    }
+});
+
+colourBtn.addEventListener("click", function(e) {
+    if (e.target.id == 'colourBtn') {
+        colourMode = toggle(colourMode);
         
     }
 });
