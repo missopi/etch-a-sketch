@@ -1,5 +1,5 @@
 
-let colour = 'RGB(0,0,0)';
+let colour = 'red';
 
 function makeGrid(number) {
     let etchGrid = document.querySelector('.grid');
@@ -29,27 +29,26 @@ function resetGrid() {
 
 
 function changeColour() {
-   // console.log(e.target.className);
-  //  if (e.target.className === 'colour') {
-  //      let r = Math.floor(Math.random() * 256);
-  //      let g = Math.floor(Math.random() * 256);
-  //      let b = Math.floor(Math.random() * 256);
-   // e.style.backgroundColor = `rgb(${r}, ${g}, ${b})`
-  //  }
-  //  else if (e.target.className === 'erase') {
-  //this.style.backgroundColor = '#ffffff';
-  //  }
-   // else if (e.target.className === 'black') {
    this.style.backgroundColor = colour;
-   // }
 };
 
 function erase() {
-    colour = 'white';
+    colour = 'rgb(255,255,255)';
 };
 
 function black() {
     colour = 'black';
-}
+};
 
+function rgb() {
+    if ((colour = 'rgb')) {
+        let r = Math.floor(Math.random() * 256);
+        let g = Math.floor(Math.random() * 256);
+        let b = Math.floor(Math.random() * 256);
+        this.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    }
+    else {
+        this.style.backgroundColor = colour;
+    };
+};
 
