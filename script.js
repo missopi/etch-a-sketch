@@ -26,6 +26,11 @@ function makeGrid(number) {
 
 makeGrid(16);
 
+function resetGrid() {
+    let etchGrid = document.querySelector('.grid');
+    let squares = etchGrid.querySelectorAll('div');
+    squares.forEach((div) => div.remove());
+};
 
 
 function changeColour() {
