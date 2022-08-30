@@ -7,17 +7,22 @@
 ////const colourBtn = document.getElementById('rgb');
 //const eraseBtn = document.getElementById('erase');
 
-let etchGrid = document.querySelector('.grid');
-etchGrid.style.gridTemplateColumns = "repeat(16 , 2fr)";
-console.log(etchGrid.style.gridTemplateColumns)
-etchGrid.style.gridTemplateRows = "repeat(16 , 2fr";
-console.log(etchGrid.style.gridTemplateColumns)
+function makeGrid(size) {
+    let etchGrid = document.querySelector('.grid');
+    etchGrid.style.gridTemplateColumns = "repeat(16 , 2fr)";
+    console.log(etchGrid.style.gridTemplateColumns)
+    etchGrid.style.gridTemplateRows = "repeat(16 , 2fr";
+    console.log(etchGrid.style.gridTemplateColumns)
 
-for (let i = 0; i < 256; i++) {
-    let square = document.createElement('div');
-    square.style.backgroundColor = 'red';
-    etchGrid.insertAdjacentElement('beforeend', square);
+    for (let i = 0; i < 256; i++) {
+        let square = document.createElement('div');
+        square.style.backgroundColor = 'red';
+        etchGrid.insertAdjacentElement('beforeend', square);
+    };
 };
+
+makeGrid(16);
+
 
 // creates rows for grid
 //function makeRows(rowNumber) {
