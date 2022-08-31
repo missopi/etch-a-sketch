@@ -23,6 +23,8 @@ function resetGrid() {
     let etchGrid = document.querySelector('.grid');
     let squares = etchGrid.querySelectorAll('div');
     squares.forEach((div) => div.style.backgroundColor = 'gray');
+    makeGrid(16);
+    colour = 'black';
 };
 
 function changeGridSize() {
