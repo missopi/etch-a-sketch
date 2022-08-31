@@ -33,7 +33,7 @@ function changeColour() {
 };
 
 function erase() {
-    colour = 'rgb(255,255,255)';
+    colour = 'gray';
 };
 
 function black() {
