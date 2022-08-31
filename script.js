@@ -30,7 +30,7 @@ function resetGrid() {
 function changeGridSize() {
     let number = prompt('Pick a grid size from 1 to 100',' ') 
     while (number > 100 || number < 1) {
-        alert('Please keep you response between 1 to 100');
+        alert('Please keep your response between 1 and 100');
         number = prompt('Pick a grid size from 1 to 100',' ') 
     };
     let total = number * number;
