@@ -40,8 +40,12 @@ function erase() {
 
 function black() {
     colour = 'rgb(0,0,0)';
-    console.log(this.style);
-    
+    console.log(this.style); 
+};
+
+function white() {
+    colour = 'rgb(255,255,255)';
+    console.log(this.style); 
 };
 
 function rgb() {
