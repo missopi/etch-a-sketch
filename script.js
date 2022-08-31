@@ -37,16 +37,21 @@ function erase() {
 };
 
 function black() {
-    colour = 'black';
+    colour = 'rgb(0,0,0)';
+    console.log(this.style.backgroundColor);
 };
 
 function rgb() {
-    colour = 'rgb';
-    if (colour = 'rgb') {
+    if ((colour = 'rgb')) {
+        console.log(colour);
         let r = Math.floor(Math.random() * 256);
         let g = Math.floor(Math.random() * 256);
         let b = Math.floor(Math.random() * 256);
-        this.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+        let bgColor = "rgb("+r+","+g+","+b+")";
+        console.log(bgColor);
+        console.log(this.style.backgroundColor);
+        this.style.backgroundColor = bgColor;
+        console.log(this.style.backgroundColor);
     }
     else {
         this.style.backgroundColor = colour;
