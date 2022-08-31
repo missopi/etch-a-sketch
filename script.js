@@ -1,6 +1,4 @@
 
-let colour = 'black';
-
 function makeGrid(number) {
     let etchGrid = document.querySelector('.grid');
     let squares = etchGrid.querySelectorAll('div');
@@ -27,6 +25,18 @@ function resetGrid() {
     squares.forEach((div) => div.style.backgroundColor = 'gray');
 };
 
+function changeGridSize() {
+    let number = prompt('Pick a size of grid from 1 to 100', ' ');
+    let total = number * number;
+    for (let i = 0; i < total; i++) {
+        let etchGrid = document.querySelector('.grid');
+        let squares = etchGrid.querySelectorAll('div');
+        squares.forEach((div) => div.style.backgroundColor = 'gray');
+    };
+    makeGrid(number);
+};
+
+let colour = 'black';
 
 function changeColour() {
    this.style.backgroundColor = colour;
