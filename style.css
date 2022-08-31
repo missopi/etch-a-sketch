@@ -1,26 +1,28 @@
 
-
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(204, 5, 5);
 }
+
 .title {
     text-align: center;
-    font-size: 60px;
+    font-size: 75px;
     font-weight: bold;
-    color: rgb(47, 46, 46);
+    color: rgb(254, 253, 253);
     margin-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-family: 'Marker Felt', sans-serif;
+    -webkit-text-stroke: 3px black;
 }
 
 .container {
     display: flex;
     justify-content: center;
     background-color: rgb(0, 0, 0);
-    padding: 5px;
-    width: 505px
+    padding: 3px;
+    width: 503px
 }
 
 .grid {
@@ -31,10 +33,10 @@ body {
 
 button {
     padding: 5px;
-    padding-left: 30px;
-    padding-right: 30px; 
+    padding-left: 50px;
+    padding-right: 50px; 
     font-family: 'Marker Felt', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     background-color: white;
     border: 2px solid black;
 }
@@ -47,11 +49,24 @@ button {
     flex-direction: row;
 }
 
-#colourBtns {
+#right {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
     
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#contents {
+    display: flex;
+    gap: 20px;
 }

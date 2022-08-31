@@ -10,14 +10,19 @@
 
     <body>
         <div class="title">Etch-a-Sketch</div>
-        <div class="container">
-            <div class="grid"></div>
-        </div>
-        <div id="colourBtns">
-            <button id="black" onclick="black()">Black</button>
-            <button id="rgb" onclick="rgb()">RGB</button>
-            <button id="clear" onclick="resetGrid()">Clear Grid</button>
-            <button id="erase" onclick="erase()">Erase</button>
+        <div id="contents">
+            <div id="left">
+                <button id="clear" onclick="resetGrid()">Clear</button>
+                <button id="changeSize" onclick="changeSize()">Size</button>
+            </div>
+            <div class="container">
+                <div class="grid"></div>
+            </div>
+            <div id="right">
+                <button id="black" onclick="black()">Black</button>
+                <button id="rgb" onclick="rgb()">RGB</button>
+                <button id="erase" onclick="erase()">Erase</button>
+            </div>
         </div>
     </body>
 </html>
