@@ -30,15 +30,18 @@ function resetGrid() {
 
 function changeColour() {
    this.style.backgroundColor = colour;
+   console.log(this.style.backgroundColor);
 };
 
 function erase() {
     colour = 'gray';
+    console.log(this.style);
 };
 
 function black() {
     colour = 'rgb(0,0,0)';
-    console.log(this.style.backgroundColor);
+    console.log(this.style);
+    
 };
 
 function rgb() {
@@ -49,12 +52,11 @@ function rgb() {
         let b = Math.floor(Math.random() * 256);
         let bgColor = "rgb("+r+","+g+","+b+")";
         console.log(bgColor);
-        console.log(this.style.backgroundColor);
-        this.style.backgroundColor = bgColor;
-        console.log(this.style.backgroundColor);
+        colour = bgColor;
+        console.log(this.style);
     }
     else {
-        this.style.backgroundColor = colour;
+        this.style = colour;
     };
 };
 
