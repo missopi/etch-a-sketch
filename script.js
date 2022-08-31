@@ -26,7 +26,11 @@ function resetGrid() {
 };
 
 function changeGridSize() {
-    let number = prompt('Pick a size of grid from 1 to 100', ' ');
+    let number = prompt('Pick a grid size from 1 to 100',' ') 
+    while (number > 100 || number < 1) {
+        alert('Please keep you response between 1 to 100');
+        number = prompt('Pick a grid size from 1 to 100',' ') 
+    };
     let total = number * number;
     for (let i = 0; i < total; i++) {
         let etchGrid = document.querySelector('.grid');
