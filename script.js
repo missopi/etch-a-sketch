@@ -39,12 +39,12 @@ function erase() {
 };
 
 function black() {
-    colour = 'rgb(0,0,0)';
+    colour = 'black';
     console.log(this.style); 
 };
 
 function white() {
-    colour = 'rgb(255,255,255)';
+    colour = 'white';
     console.log(this.style); 
 };
 
