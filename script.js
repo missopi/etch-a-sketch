@@ -1,5 +1,5 @@
 
-let colour = 'white';
+let colour = 'black';
 
 function makeGrid(number) {
     let etchGrid = document.querySelector('.grid');
@@ -13,7 +13,7 @@ function makeGrid(number) {
     let total = number * number;
     for (let i = 0; i < total; i++) {
         let square = document.createElement('div');
-        square.style.backgroundColor = 'white';
+        square.style.backgroundColor = 'gray';
         square.addEventListener('mouseover', changeColour);
         etchGrid.insertAdjacentElement('beforeend', square);
     };
@@ -24,7 +24,7 @@ makeGrid(16);
 function resetGrid() {
     let etchGrid = document.querySelector('.grid');
     let squares = etchGrid.querySelectorAll('div');
-    squares.forEach((div) => div.style.backgroundColor = 'white');
+    squares.forEach((div) => div.style.backgroundColor = 'gray');
 };
 
 
@@ -41,7 +41,8 @@ function black() {
 };
 
 function rgb() {
-    if ((colour = 'rgb')) {
+    colour = 'rgb';
+    if (colour = 'rgb') {
         let r = Math.floor(Math.random() * 256);
         let g = Math.floor(Math.random() * 256);
         let b = Math.floor(Math.random() * 256);
