@@ -2,7 +2,6 @@
 function makeGrid(number) {
     let etchGrid = document.querySelector('.grid');
     let squares = etchGrid.querySelectorAll('div');
-    squares.forEach((div) => div.remove());
     etchGrid.style.gridTemplateColumns = `repeat(${number} , 2fr)`;
     etchGrid.style.gridTemplateRows = `repeat(${number} , 2fr)`;
 
