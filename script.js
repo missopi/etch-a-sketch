@@ -30,12 +30,9 @@ function changeGridSize() {
         alert('Please keep your response between 1 and 100');
         number = prompt('Pick a grid size from 1 to 100',' ') 
     };
-    let total = number * number;
-    for (let i = 0; i < total; i++) {
-        let etchGrid = document.querySelector('.grid');
-        let squares = etchGrid.querySelectorAll('div');
-        squares.forEach((div) => div.style.backgroundColor = 'gray');
-    };
+    let etchGrid = document.querySelector('.grid');
+    let squares = etchGrid.querySelectorAll('div');
+    squares.forEach((div) => div.style.backgroundColor = 'gray');
     makeGrid(number);
 };
 
