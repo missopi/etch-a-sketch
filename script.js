@@ -4,9 +4,7 @@ function makeGrid(number) {
     let squares = etchGrid.querySelectorAll('div');
     squares.forEach((div) => div.remove());
     etchGrid.style.gridTemplateColumns = `repeat(${number} , 2fr)`;
-    console.log(etchGrid.style.gridTemplateColumns)
     etchGrid.style.gridTemplateRows = `repeat(${number} , 2fr)`;
-    console.log(etchGrid.style.gridTemplateColumns)
 
     let total = number * number;
     for (let i = 0; i < total; i++) {
@@ -46,22 +44,18 @@ let colour = 'black';
 
 function changeColour() {
    this.style.backgroundColor = colour;
-   console.log(this.style.backgroundColor);
 };
 
 function erase() {
     colour = 'gray';
-    console.log(this.style);
 };
 
 function black() {
     colour = 'black';
-    console.log(this.style); 
 };
 
 function white() {
     colour = 'white';
-    console.log(this.style); 
 };
 
 function rgb() {
@@ -71,9 +65,7 @@ function rgb() {
         let g = Math.floor(Math.random() * 256);
         let b = Math.floor(Math.random() * 256);
         let bgColor = "rgb("+r+","+g+","+b+")";
-        console.log(bgColor);
         colour = bgColor;
-        console.log(this.style);
     }
     else {
         this.style = colour;
